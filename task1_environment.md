@@ -41,7 +41,7 @@ UnavailableInvalidChannel: HTTP 404 NOT FOUND
 1. 我先到 GitHub 中建立了一个新仓库（Allero.II）
 2. 我不知道怎样连接 Git 与 GitHub，在豆包指引下我把 git 的用户名和邮箱设置为和 GitHub 的一样
 3. 豆包按我要求生成了一个密钥 `ssh-keygen -t ed25519 -C "googonce11223@gmail.com"`，默认路径，不设密码
-（抱歉之前这里写成了“我按豆包要求”，我记不得是我自己打错了还是叫豆包帮我修格式时它干的好事）
+（抱歉之前这里写成了“我按豆包要求”，我记不得是我自己打错了还是叫豆包帮我修格式时它干的好事，为我的检查不周道歉）
 4. 我把密钥复制下来，到 GitHub 网站的 SSH keys 页面添加上了
 5. 我输入 `ssh -T git@github.com` 测试连接，输入 yes
 
