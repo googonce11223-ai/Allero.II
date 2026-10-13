@@ -20,8 +20,11 @@
 3. 我尝试开一个新的虚拟环境
 
    ⚠ **报错：豆包给我的其中一个路径是错的**
-```UnavailableInvalidChannel: HTTP 404 NOT FOUND
- for channel anaconda/pkgs/pytorch <https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/pytorch>```
+
+```
+UnavailableInvalidChannel: HTTP 404 NOT FOUND
+ for channel anaconda/pkgs/pytorch <https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/pytorch>
+ ```
 
 - 可知它给我说明了路径不存在，于是我亲自去清华镜像站官网查出正确路径，该路径中 `/pkgs/pytorch/` 应该是 `/cloud/pytorch/`
 - 我再次输入 `conda create -n udlab python=3.11`，输出 `done`，环境创建完成
@@ -43,8 +46,10 @@
 
 ⚠ **报错：它说 Permission denied，权限被拒绝了，配对失败**
 
-```Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
-git@github.com: Permission denied (publickey).```
+```
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+```
 
 - 我自己整了半天，又新开了一个仓库，等等等等，依然失败，最后问豆包，它让我检查一下有没有把密钥复制错，果然是复制漏了一节
 - 再次测试，显示连接成功
